@@ -77,7 +77,7 @@ int main()
             exit(-1);
         }
         port = ntohs(*((int *)(buf2 + 22)));
-        if(port == 12346)
+        if(port == 12345)
         {
             cycle = 0;
             printf("CLIENT: form %d , message: %s\n", port, buf2 + 28);
